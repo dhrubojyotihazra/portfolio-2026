@@ -9,7 +9,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, F
 
 export function Contact() {
   return (
-    <section id="contact" className="relative z-10 py-32 px-6 lg:px-24 flex justify-center group">
+    <section id="contact" className="relative z-10 py-16 md:py-32 px-4 md:px-6 lg:px-24 flex justify-center group">
       <div className="w-full max-w-4xl relative rounded-[2.25rem] border-[0.75px] border-white/10 p-2 md:p-3">
         <GlowingEffect
           spread={40}
@@ -20,8 +20,8 @@ export function Contact() {
           borderWidth={3}
           className="rounded-[2.25rem]"
         />
-        <div className="relative z-10 w-full backdrop-blur-md bg-black/10 border border-white/5 rounded-[2rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] p-12 md:p-20 text-center overflow-hidden">
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 tracking-tighter text-white">Let's Build Something Together</h2>
+        <div className="relative z-10 w-full backdrop-blur-md bg-black/10 border border-white/5 rounded-[2rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] p-6 sm:p-10 md:p-20 text-center overflow-hidden">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 md:mb-12 tracking-tighter text-white">Let&apos;s Build Something Together</h2>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-16">
             <Button asChild className="bg-white text-abyss hover:bg-white border-none relative text-lg font-bold rounded-full h-[60px] p-1 ps-8 pe-[72px] group/btn transition-all duration-500 hover:ps-[72px] hover:pe-8 w-fit overflow-hidden cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.2)]">
@@ -46,7 +46,7 @@ export function Contact() {
               </GlassButton>
             </a>
           </div>
-          <div className="flex justify-center gap-6 mt-8">
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
              <SocialFlipButton items={[
                { letter: "C", icon: <FaGithub size={20} />, label: "Github", href: "https://github.com/dhrubojyotihazra" },
                { letter: "O", icon: <FaTwitter size={20} />, label: "Twitter", href: "https://x.com/Kngdhruv" },

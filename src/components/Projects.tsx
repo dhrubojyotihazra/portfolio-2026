@@ -43,14 +43,14 @@ const projects = [
 
 export function Projects() {
   return (
-    <section className="relative z-20 text-white py-32 px-6 lg:px-24">
+    <section className="relative z-20 text-white py-16 md:py-32 px-4 md:px-6 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-5xl md:text-7xl font-bold mb-16 tracking-tighter">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-16 tracking-tighter">
             Selected <span className="text-white/50">Works.</span>
           </h2>
         </motion.div>
@@ -81,10 +81,10 @@ export function Projects() {
                 
                 <div className={`relative z-10 flex h-full flex-col justify-between overflow-hidden rounded-xl border-[0.75px] border-white/5 bg-black/10 backdrop-blur-md p-8 shadow-sm transition-all duration-500 ${project.border}`}>
                   <div>
-                    <h3 className={`text-3xl font-bold mb-4 transition-colors duration-300 ${project.color}`}>
+                    <h3 className={`text-xl md:text-3xl font-bold mb-3 transition-colors duration-300 ${project.color}`}>
                       {project.title}
                     </h3>
-                    <p className="text-white/60 text-lg leading-relaxed">
+                    <p className="text-white/60 text-base md:text-lg leading-relaxed">
                       {project.description}
                     </p>
                   </div>

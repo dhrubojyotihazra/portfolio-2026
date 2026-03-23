@@ -26,11 +26,11 @@ export function ScrollyCanvas() {
 
   // Overlay Transforms
   // Strict non-overlapping chronological timeline
-  const opacity1 = useTransform(scrollYProgress, [0, 0.15, 0.25, 1], [1, 1, 0, 0]);
-  const y1 = useTransform(scrollYProgress, [0, 0.15, 0.25, 1], [0, 0, -100, -100]);
+  const opacity1 = useTransform(scrollYProgress, [0, 0.10, 0.18, 1], [1, 1, 0, 0]);
+  const y1 = useTransform(scrollYProgress, [0, 0.10, 0.18, 1], [0, 0, -100, -100]);
 
-  const opacity2 = useTransform(scrollYProgress, [0, 0.25, 0.35, 0.55, 0.65, 1], [0, 0, 1, 1, 0, 0]);
-  const x2 = useTransform(scrollYProgress, [0, 0.25, 0.35, 0.55, 0.65, 1], [-100, -100, 0, 0, 100, 100]);
+  const opacity2 = useTransform(scrollYProgress, [0, 0.18, 0.28, 0.52, 0.62, 1], [0, 0, 1, 1, 0, 0]);
+  const x2 = useTransform(scrollYProgress, [0, 0.18, 0.28, 0.52, 0.62, 1], [-100, -100, 0, 0, 100, 100]);
 
   const opacity3 = useTransform(scrollYProgress, [0, 0.65, 0.75, 1], [0, 0, 1, 1]);
   const x3 = useTransform(scrollYProgress, [0, 0.65, 0.75, 1], [100, 100, 0, 0]);
@@ -131,12 +131,12 @@ export function ScrollyCanvas() {
           {/* 0% -> Center */}
           <motion.div
             style={{ opacity: opacity1, y: y1 }}
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full max-w-4xl px-4"
+            className="absolute inset-x-0 top-[65%] md:inset-x-auto md:left-1/2 md:w-full md:max-w-4xl md:top-1/2 md:-translate-x-1/2 -translate-y-1/2 text-center px-6"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
               Dhrubojyoti Hazra
             </h1>
-            <p className="text-lg sm:text-xl md:text-3xl font-light text-white/80">
+            <p className="text-base sm:text-xl md:text-3xl font-light text-white/80">
               Data Science & Gen AI Developer.
             </p>
           </motion.div>
@@ -144,7 +144,7 @@ export function ScrollyCanvas() {
           {/* 30% -> Left */}
           <motion.div
             style={{ opacity: opacity2, x: x2 }}
-            className="absolute top-1/3 left-2 md:left-[3%] text-left max-w-xl"
+            className="absolute top-[66%] md:top-1/3 left-2 md:left-[3%] text-left max-w-xl"
           >
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-normal pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
               Engineering Intelligence.
