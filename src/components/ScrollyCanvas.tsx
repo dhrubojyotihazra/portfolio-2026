@@ -146,7 +146,7 @@ export function ScrollyCanvas() {
             style={{ opacity: opacity2, x: x2 }}
             className="absolute left-6 inset-x-auto top-[68%] md:top-[60%] md:left-[3%] text-left w-full max-w-[calc(100vw-3rem)] md:max-w-none md:px-0"
           >
-            <h2 className="text-6xl sm:text-7xl md:text-8xl font-bold leading-tight pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] shadow-black">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] shadow-black">
               Engineering <br /> Intelligence.
             </h2>
             <div className="h-1 w-24 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] md:mx-0" />
