@@ -144,7 +144,7 @@ export function ScrollyCanvas() {
           {/* 30% -> Left */}
           <motion.div
             style={{ opacity: opacity2, x: x2 }}
-            className="absolute inset-x-0 top-[66%] md:inset-x-auto md:top-1/3 md:left-[3%] text-center md:text-left w-full max-w-xl md:max-w-none px-6 md:px-0"
+            className="absolute inset-x-0 top-[68%] md:inset-x-auto md:top-[60%] md:left-[3%] text-center md:text-left w-full max-w-xl md:max-w-none px-6 md:px-0"
           >
             <h2 className="text-5xl sm:text-6xl md:text-6xl font-bold leading-normal pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] shadow-black">
               Engineering Intelligence.
