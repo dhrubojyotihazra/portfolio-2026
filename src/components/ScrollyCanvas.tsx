@@ -144,12 +144,12 @@ export function ScrollyCanvas() {
           {/* 30% -> Left */}
           <motion.div
             style={{ opacity: opacity2, x: x2 }}
-            className="absolute inset-x-0 top-[68%] md:inset-x-auto md:top-[60%] md:left-[3%] text-center md:text-left w-full max-w-xl md:max-w-none px-6 md:px-0"
+            className="absolute left-6 inset-x-auto top-[68%] md:top-[60%] md:left-[3%] text-left w-full max-w-[calc(100vw-3rem)] md:max-w-none md:px-0"
           >
-            <h2 className="text-5xl sm:text-6xl md:text-6xl font-bold leading-normal pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] shadow-black">
-              Engineering Intelligence.
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] shadow-black">
+              Engineering <br /> Intelligence.
             </h2>
-            <div className="h-1 w-24 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] mx-auto md:mx-0" />
+            <div className="h-1 w-24 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] md:mx-0" />
           </motion.div>
 
           {/* 60% -> Right */}
