@@ -23,7 +23,7 @@ const projects = [
     description: "Dynamic Customer Review and sentiment analysis with executive reports and chat with your data.",
     color: "group-hover:text-neon-pink",
     border: "group-hover:border-neon-pink",
-    link: "https://github.com/dhrubojyotihazra/OpinionIQ"
+    link: "https://opinion-iq-red.vercel.app"
   },
   {
     title: "Vitals",
@@ -78,7 +78,7 @@ export function Projects() {
                   borderWidth={3}
                   className="rounded-[1.5rem]"
                 />
-                
+
                 <div className={`relative z-10 flex h-full flex-col justify-between overflow-hidden rounded-xl border-[0.75px] border-white/5 bg-black/10 backdrop-blur-md p-8 shadow-sm transition-all duration-500 ${project.border}`}>
                   <div>
                     <h3 className={`text-xl md:text-3xl font-bold mb-3 transition-colors duration-300 ${project.color}`}>
@@ -88,10 +88,10 @@ export function Projects() {
                       {project.description}
                     </p>
                   </div>
-                  
+
                   <div className="mt-8 flex justify-end">
                     <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white/10 transition-colors">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                     </div>
                   </div>
                 </div>
