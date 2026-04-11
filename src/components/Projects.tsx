@@ -16,7 +16,7 @@ const projects = [
     description: "Visualize your GitHub repository as an interactive 3D galaxy.",
     color: "group-hover:text-neon-purple",
     border: "group-hover:border-neon-purple",
-    link: "https://codegalaxy-web.onrender.com"
+    link: "https://codegalaxy-ebon.vercel.app"
   },
   {
     title: "OpinionIQ",
