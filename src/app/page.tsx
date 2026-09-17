@@ -1,8 +1,10 @@
+import { Preloader } from "@/components/Preloader";
+import { Navbar } from "@/components/Navbar";
 import { Background } from "@/components/Background";
 import { ScrollyCanvas } from "@/components/ScrollyCanvas";
-import { Projects } from "@/components/Projects";
-import { WhatIDo } from "@/components/WhatIDo";
 import { About } from "@/components/About";
+import { WhatIDo } from "@/components/WhatIDo";
+import { Projects } from "@/components/Projects";
 import { SkillsTrail } from "@/components/SkillsTrail";
 import { Experience } from "@/components/Experience";
 import { Contact } from "@/components/Contact";
@@ -10,11 +12,13 @@ import { Contact } from "@/components/Contact";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full">
+      <Preloader />
+      <Navbar />
       <Background />
       <ScrollyCanvas />
-      <Projects />
-      <WhatIDo />
       <About />
+      <WhatIDo />
+      <Projects />
       <SkillsTrail />
       <Experience />
       <Contact />

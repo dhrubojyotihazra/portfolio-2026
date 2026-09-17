@@ -6,7 +6,7 @@ import { MapPin, GraduationCap, Wifi } from "lucide-react";
 
 export function About() {
   return (
-    <section className="relative z-10 py-16 md:py-32 px-4 md:px-6 lg:px-24">
+    <section id="about" className="relative z-10 py-16 md:py-32 px-4 md:px-6 lg:px-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         {/* Left: Orbiting Skills Animation */}
         <div className="relative h-[300px] md:h-[400px] w-full flex items-center justify-center">

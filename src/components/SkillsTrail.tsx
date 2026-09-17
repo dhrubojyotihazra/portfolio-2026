@@ -8,7 +8,7 @@ const skills = [
 
 export function SkillsTrail() {
   return (
-    <section className="relative z-10 py-24 overflow-hidden mask-fade-edges">
+    <section className="relative z-10 py-12 md:py-16 overflow-hidden mask-fade-edges">
       <div className="flex whitespace-nowrap overflow-hidden">
         <motion.div
           animate={{ x: ["0%", "-33.333333%"] }}

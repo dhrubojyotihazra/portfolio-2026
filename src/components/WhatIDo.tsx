@@ -5,25 +5,25 @@ import { GlowingEffect } from "@/components/ui/glowing-effect";
 const whatIDoItems = [
   {
     title: "Data Science Student",
-    description: "Focus on algorithms, statistical modeling, and academic rigor."
+    description: "Developing predictive models, machine learning algorithms, and deep statistical reasoning."
   },
   {
     title: "Data Analyst",
-    description: "Focus on building analytical pipelines and business intelligence."
+    description: "Architecting end-to-end data pipelines, ETL workflows, and actionable business intelligence."
   },
   {
     title: "Gen AI Engineer",
-    description: "Focus on RAG architectures, LLMs, and intelligent agents."
+    description: "Building production RAG systems, autonomous multi-agent frameworks, and fine-tuned LLM solutions."
   },
   {
     title: "UI/UX Developer",
-    description: "Focus on bridging design and engineering with performant frontends."
+    description: "Crafting fluid, high-performance web experiences that bridge complex intelligence with intuitive design."
   }
 ];
 
 export function WhatIDo() {
   return (
-    <section className="relative z-10 py-16 md:py-32 px-4 md:px-6 lg:px-24">
+    <section id="what-i-do" className="relative z-10 py-16 md:py-32 px-4 md:px-6 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-16 tracking-tighter text-white">
           What I <span className="text-white/50">Do.</span>

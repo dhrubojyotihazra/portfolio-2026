@@ -32,8 +32,8 @@ export function ScrollyCanvas() {
   const opacity2 = useTransform(scrollYProgress, [0, 0.18, 0.28, 0.52, 0.62, 1], [0, 0, 1, 1, 0, 0]);
   const x2 = useTransform(scrollYProgress, [0, 0.18, 0.28, 0.52, 0.62, 1], [-100, -100, 0, 0, 100, 100]);
 
-  const opacity3 = useTransform(scrollYProgress, [0, 0.65, 0.75, 1], [0, 0, 1, 1]);
-  const x3 = useTransform(scrollYProgress, [0, 0.65, 0.75, 1], [100, 100, 0, 0]);
+  const opacity3 = useTransform(scrollYProgress, [0, 0.60, 0.70, 0.90, 0.98, 1], [0, 0, 1, 1, 0, 0]);
+  const x3 = useTransform(scrollYProgress, [0, 0.60, 0.70, 0.90, 0.98, 1], [60, 60, 0, 0, -60, -60]);
 
   useEffect(() => {
     const preloadedImages: HTMLImageElement[] = [];
@@ -158,7 +158,7 @@ export function ScrollyCanvas() {
             className="absolute bottom-1/3 inset-x-0 pr-6 md:pr-[10%] pl-6 text-right"
           >
             <h2 className="text-[clamp(1.75rem,5vw,3.75rem)] font-bold leading-tight mb-4 text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
-              Bridging raw data and <br /><span className="text-orange-500 font-bold [text-shadow:_0_4px_4px_rgb(0_0_0_/_1)]">gen-experiences.</span>
+              Bridging raw data and <br /><span className="text-orange-500 font-bold [text-shadow:_0_4px_4px_rgb(0_0_0_/_1)]">generative experiences.</span>
             </h2>
             <div className="h-1 w-32 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] ml-auto" />
           </motion.div>
