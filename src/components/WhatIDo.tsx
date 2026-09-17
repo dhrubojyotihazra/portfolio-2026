@@ -51,7 +51,7 @@ export function WhatIDo() {
                 />
                 <div className="relative z-10 flex flex-col justify-center h-full bg-black/10 backdrop-blur-md border border-white/5 rounded-[1.75rem] p-6 md:p-10 shadow-sm transition-all duration-500 overflow-hidden">
                   <h3 className="text-xl md:text-3xl font-bold text-white mb-3">{item.title}</h3>
-                  <p className="text-white/60 text-lg leading-relaxed">{item.description}</p>
+                  <p className="text-base md:text-lg leading-relaxed text-white/60 font-light">{item.description}</p>
                 </div>
               </div>
             </motion.li>

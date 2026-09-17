@@ -21,7 +21,7 @@ export function Contact() {
           className="rounded-[2.25rem]"
         />
         <div className="relative z-10 w-full backdrop-blur-md bg-black/10 border border-white/5 rounded-[2rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] p-6 sm:p-10 md:p-20 text-center overflow-hidden">
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 md:mb-12 tracking-tighter text-white">Let&apos;s Build Something Together</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12 tracking-tighter text-white">Let&apos;s Build Something Together</h2>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-16">
             <Button asChild className="bg-white text-abyss hover:bg-white border-none relative text-lg font-bold rounded-full h-[60px] p-1 ps-8 pe-[72px] group/btn transition-all duration-500 hover:ps-[72px] hover:pe-8 w-fit overflow-hidden cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.2)]">

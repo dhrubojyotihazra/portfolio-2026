@@ -43,8 +43,8 @@ export function Experience() {
                     className="rounded-[1.25rem]"
                   />
                   <div className="relative z-10 bg-black/10 backdrop-blur-md p-8 rounded-xl border border-white/5 transition-all overflow-hidden">
-                    <h3 className="text-lg md:text-2xl font-bold text-white mb-2">{exp.role}</h3>
-                    <div className="text-neon-blue font-medium mb-4 text-lg">{exp.company}</div>
+                    <h3 className="text-xl md:text-3xl font-bold text-white mb-2">{exp.role}</h3>
+                    <div className="text-neon-blue font-medium mb-2 text-base md:text-lg">{exp.company}</div>
                     <div className="text-white/50 text-sm">{exp.date}</div>
                   </div>
                 </div>

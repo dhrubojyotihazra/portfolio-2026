@@ -57,7 +57,7 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-16 tracking-tighter">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-16 tracking-tighter text-white">
             Selected <span className="text-white/50">Works.</span>
           </h2>
         </motion.div>
@@ -91,7 +91,7 @@ export function Projects() {
                     <h3 className={`text-xl md:text-3xl font-bold mb-3 transition-colors duration-300 ${project.color}`}>
                       {project.title}
                     </h3>
-                    <p className="text-white/60 text-base md:text-lg leading-relaxed">
+                    <p className="text-white/60 text-base md:text-lg leading-relaxed font-light">
                       {project.description}
                     </p>
                   </div>

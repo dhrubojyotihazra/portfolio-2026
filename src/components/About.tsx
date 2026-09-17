@@ -15,11 +15,11 @@ export function About() {
 
         {/* Right: Text */}
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 tracking-tight text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 tracking-tighter text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
             Building intelligent systems out of raw data.
           </h2>
 
-          <div className="text-base sm:text-lg md:text-xl leading-relaxed text-white/70 mb-6 md:mb-8 font-light space-y-4">
+          <div className="text-base sm:text-lg md:text-xl leading-relaxed text-white/60 mb-6 md:mb-8 font-light space-y-4">
             <p>
               I&apos;m Dhrubojyoti Hazra (Dhruv), a 3rd-year Computer Science student
               specializing in Data Science and Generative AI.
