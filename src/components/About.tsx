@@ -33,7 +33,7 @@ export function About() {
   const words = ABOUT_TEXT.split(" ");
 
   return (
-    <section id="about" ref={containerRef} className="relative z-10 py-20 md:py-36 px-4 md:px-6 lg:px-24 overflow-hidden">
+    <section id="about" ref={containerRef} className="relative z-10 py-10 md:py-16 px-4 md:px-6 lg:px-24 overflow-hidden">
       <div className="max-w-[1240px] mx-auto flex flex-col items-center">
         {/* Section Header with exact font & tracking as 'What I Do.' */}
         <motion.div
@@ -41,7 +41,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col items-center mb-12 md:mb-16"
+          className="flex flex-col items-center mb-8 md:mb-12"
         >
           {/* Bold Header matching 'What I Do.' font */}
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-white text-center">

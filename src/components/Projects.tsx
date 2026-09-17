@@ -50,14 +50,14 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="relative z-20 text-white py-16 md:py-32 px-4 md:px-6 lg:px-24">
+    <section id="projects" className="relative z-20 text-white py-10 md:py-16 px-4 md:px-6 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-16 tracking-tighter text-white">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 md:mb-10 tracking-tighter text-white">
             Selected <span className="text-white/50">Works.</span>
           </h2>
         </motion.div>

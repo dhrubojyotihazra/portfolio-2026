@@ -41,7 +41,7 @@ export function WhatIDo() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="what-i-do" className="relative z-10 py-16 md:py-32 px-4 md:px-6 lg:px-24 overflow-hidden">
+    <section id="what-i-do" className="relative z-10 py-10 md:py-16 px-4 md:px-6 lg:px-24 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading kept exactly as is */}
         <motion.div
@@ -50,7 +50,7 @@ export function WhatIDo() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 md:mb-16 tracking-tighter text-white">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 md:mb-10 tracking-tighter text-white">
             What I <span className="text-white/50">Do.</span>
           </h2>
         </motion.div>
