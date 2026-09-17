@@ -1,5 +1,4 @@
-import { Preloader } from "@/components/Preloader";
-import { Navbar } from "@/components/Navbar";
+import { SideNav } from "@/components/SideNav";
 import { Background } from "@/components/Background";
 import { ScrollyCanvas } from "@/components/ScrollyCanvas";
 import { About } from "@/components/About";
@@ -12,8 +11,7 @@ import { Contact } from "@/components/Contact";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full">
-      <Preloader />
-      <Navbar />
+      <SideNav />
       <Background />
       <ScrollyCanvas />
       <About />
