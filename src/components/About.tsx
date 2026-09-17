@@ -43,14 +43,6 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center mb-12 md:mb-16"
         >
-          {/* Auton Style Accent Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 mb-4">
-            <span className="w-2 h-2 rounded-[2px] bg-[#32d74b] shadow-[0_0_8px_#32d74b]" />
-            <span className="text-xs uppercase tracking-[0.14em] font-medium text-white/80">
-              About
-            </span>
-          </div>
-
           {/* Bold Header matching 'What I Do.' font */}
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-white text-center">
             About <span className="text-white/50">Me.</span>
