@@ -24,16 +24,9 @@ export function ScrollyCanvas() {
 
   const frameIndex = useTransform(scrollYProgress, [0, 1], [1, FRAME_COUNT]);
 
-  // Overlay Transforms
-  // Strict non-overlapping chronological timeline
+  // Overlay Transforms for Name & Subheading
   const opacity1 = useTransform(scrollYProgress, [0, 0.10, 0.18, 1], [1, 1, 0, 0]);
   const y1 = useTransform(scrollYProgress, [0, 0.10, 0.18, 1], [0, 0, -100, -100]);
-
-  const opacity2 = useTransform(scrollYProgress, [0, 0.18, 0.28, 0.52, 0.62, 1], [0, 0, 1, 1, 0, 0]);
-  const x2 = useTransform(scrollYProgress, [0, 0.18, 0.28, 0.52, 0.62, 1], [-100, -100, 0, 0, 100, 100]);
-
-  const opacity3 = useTransform(scrollYProgress, [0, 0.60, 0.70, 0.90, 0.98, 1], [0, 0, 1, 1, 0, 0]);
-  const x3 = useTransform(scrollYProgress, [0, 0.60, 0.70, 0.90, 0.98, 1], [60, 60, 0, 0, -60, -60]);
 
   useEffect(() => {
     const preloadedImages: HTMLImageElement[] = [];
@@ -128,7 +121,7 @@ export function ScrollyCanvas() {
         {/* Overlay Text Inside the Sticky Container */}
         <div className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center">
 
-          {/* 0% -> Center — fully viewport-safe */}
+          {/* 0% -> Center — Name & Subheading */}
           <motion.div
             style={{ opacity: opacity1, y: y1 }}
             className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center px-6 w-full"
@@ -139,28 +132,6 @@ export function ScrollyCanvas() {
             <p className="text-[clamp(1rem,3vw,2rem)] font-light text-white/80 whitespace-nowrap overflow-hidden text-ellipsis">
               Data Science &amp; Gen AI Developer.
             </p>
-          </motion.div>
-
-          {/* 30% -> Left */}
-          <motion.div
-            style={{ opacity: opacity2, x: x2 }}
-            className="absolute inset-x-0 top-[60%] pl-6 md:pl-[3%] pr-6 text-left"
-          >
-            <h2 className="text-[clamp(2.5rem,7vw,4rem)] font-bold leading-tight pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
-              Engineering <br /> Intelligence.
-            </h2>
-            <div className="h-1 w-24 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]" />
-          </motion.div>
-
-          {/* 60% -> Right */}
-          <motion.div
-            style={{ opacity: opacity3, x: x3 }}
-            className="absolute bottom-1/3 inset-x-0 pr-6 md:pr-[10%] pl-6 text-right"
-          >
-            <h2 className="text-[clamp(1.75rem,5vw,3.75rem)] font-bold leading-tight mb-4 text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
-              Bridging raw data and <br /><span className="text-orange-500 font-bold [text-shadow:_0_4px_4px_rgb(0_0_0_/_1)]">generative experiences.</span>
-            </h2>
-            <div className="h-1 w-32 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] ml-auto" />
           </motion.div>
 
         </div>
