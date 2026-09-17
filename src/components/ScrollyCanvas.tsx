@@ -126,38 +126,38 @@ export function ScrollyCanvas() {
         <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />
 
         {/* Overlay Text Inside the Sticky Container */}
-        <div className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center p-8">
+        <div className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center">
 
-          {/* 0% -> Center */}
+          {/* 0% -> Center — fully viewport-safe */}
           <motion.div
             style={{ opacity: opacity1, y: y1 }}
-            className="absolute inset-x-0 top-[65%] md:inset-x-auto md:left-1/2 md:w-full md:max-w-4xl md:top-1/2 md:-translate-x-1/2 -translate-y-1/2 text-center px-6"
+            className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center px-6 w-full"
           >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter mb-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
+            <h1 className="text-[clamp(2rem,7vw,5rem)] font-bold tracking-tighter mb-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] whitespace-nowrap overflow-hidden text-ellipsis">
               Dhrubojyoti Hazra
             </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl font-light text-white/80">
-              Data Science & Gen AI Developer.
+            <p className="text-[clamp(1rem,3vw,2rem)] font-light text-white/80 whitespace-nowrap overflow-hidden text-ellipsis">
+              Data Science &amp; Gen AI Developer.
             </p>
           </motion.div>
 
           {/* 30% -> Left */}
           <motion.div
             style={{ opacity: opacity2, x: x2 }}
-            className="absolute left-6 inset-x-auto top-[68%] md:top-[60%] md:left-[3%] text-left w-full max-w-[calc(100vw-3rem)] md:max-w-none md:px-0"
+            className="absolute inset-x-0 top-[60%] pl-6 md:pl-[3%] pr-6 text-left"
           >
-            <h2 className="text-5xl sm:text-5xl md:text-6xl font-bold leading-tight pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] shadow-black">
+            <h2 className="text-[clamp(2.5rem,7vw,4rem)] font-bold leading-tight pb-3 mb-4 bg-gradient-to-r from-[#FF6B00] to-white bg-clip-text text-transparent tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
               Engineering <br /> Intelligence.
             </h2>
-            <div className="h-1 w-24 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] md:mx-0" />
+            <div className="h-1 w-24 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]" />
           </motion.div>
 
           {/* 60% -> Right */}
           <motion.div
             style={{ opacity: opacity3, x: x3 }}
-            className="absolute bottom-1/3 right-4 md:right-[10%] text-right max-w-2xl"
+            className="absolute bottom-1/3 inset-x-0 pr-6 md:pr-[10%] pl-6 text-right"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
+            <h2 className="text-[clamp(1.75rem,5vw,3.75rem)] font-bold leading-tight mb-4 text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
               Bridging raw data and <br /><span className="text-orange-500 font-bold [text-shadow:_0_4px_4px_rgb(0_0_0_/_1)]">gen-experiences.</span>
             </h2>
             <div className="h-1 w-32 bg-neon-orange rounded-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] ml-auto" />
