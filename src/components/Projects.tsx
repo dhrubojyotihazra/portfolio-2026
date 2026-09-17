@@ -39,6 +39,13 @@ const projects = [
     border: "group-hover:border-neon-orange",
     link: "https://novatrde-ai.streamlit.app"
   },
+  {
+    title: "ORCA",
+    description: "Marine EcOsystem Reasoning with Collaborative Agents — AI-powered multi-agent system for ocean ecosystem analysis.",
+    color: "group-hover:text-cyan-400",
+    border: "group-hover:border-cyan-400",
+    link: "https://orca-seven-alpha.vercel.app"
+  },
 ];
 
 export function Projects() {
